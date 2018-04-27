@@ -1,0 +1,20 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - npm i --save
+      - npm run build
+artifacts:
+  files:
+    - index.html
+    - styles/*
+    - images/*
+    - resume/*
+    - bundle.js
+    - '*.woff'
+    - '*.svg'
+    - '*.ttf'
+    - '*.woff2'
+    - '*.eot'
+  base-directory: 'build'

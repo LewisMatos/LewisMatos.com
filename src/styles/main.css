@@ -1,0 +1,183 @@
+html {
+  font-size: 0.875rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Ubuntu, Open Sans, Roboto !important;
+}
+
+li,
+ul {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu Open Sans, Roboto;
+  font-weight: 400;
+  font-weight: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.flex-main {
+  flex-direction: column;
+}
+.profile-section {
+  width: 30vw;
+  height: 100vh;
+  position: static;
+}
+
+.profile-picture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://s3.amazonaws.com/lewismatos.com/images/_71A6572.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.profile-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #185a9d;
+  background-image: linear-gradient(to left top, #20262d, #185a9d);
+  opacity: 0.75;
+}
+.profile-gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #13547a 0%, #80d0c7 100%);
+  opacity: 0.7;
+}
+
+.profile-content {
+  color: white;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.profile-content a {
+  color: white !important;
+}
+
+a:hover {
+  color: rgb(233, 80, 101) !important;
+}
+
+.header-gradient {
+  background-image: -webkit-linear-gradient(left, #21bdb7, #585858, #fff); /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(left, #21bdb7, #585858, #fff); /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(left, #21bdb7, #585858, #fff); /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(left, #21bdb7, #585858, #fff); /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(to right, #21bdb7, #585858, #fff); /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.list-inline-item {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .flex-main {
+    flex-direction: row;
+  }
+  .profile-section {
+    position: fixed;
+  }
+  .experience-section {
+    margin-left: auto;
+  }
+  .experience-section {
+    width: 70vw;
+  }
+  .profile-picture {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.9) 80%);
+    -webkit-mask-size: 200%;
+    animation: shine 1s;
+  }
+
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+  .fa-file {
+    color: rgb(255, 255, 255);
+    animation: flicker 4s linear infinite;
+  }
+  .fa-file:hover {
+    color: rgb(233, 80, 101);
+  }
+
+  @keyframes flicker {
+    0%,
+    13%,
+    15%,
+    18%,
+    20%,
+    40%,
+    86%,
+    100% {
+      opacity: 1;
+    }
+
+    14%,
+    19%,
+    42%,
+    85% {
+      opacity: 0.15;
+    }
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  html {
+    font-size: calc(0.675rem + 0.25 * (100vw - 80rem) / 40); /* 1 */
+    font-size: -webkit-calc(67.5% + 0.25 * (100vw - 8000%) / 40); /* 2 */
+    font-size: -ms-calc(0.65rem + 0.25 * (100vw - 80em) / 40); /* 3 */
+  }
+
+  section:not(:last-child) {
+    border-right: 1px solid black;
+  }
+  .resume {
+    height: 100vh;
+  }
+  .resume-content {
+    width: 100%;
+  }
+  .education {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  html {
+    font-size: calc(0.875rem + 0.25 * (100vw - 80rem) / 40); /* 1 */
+    font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40); /* 2 */
+    font-size: -ms-calc(0.875rem + 0.25 * (100vw - 80em) / 40); /* 3 */
+  }
+}
