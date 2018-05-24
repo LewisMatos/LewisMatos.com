@@ -93,7 +93,7 @@ let Resume = {
           bullet: ["Implemented Facebook and google conversion tracking."],
         },
         {
-          header: "Paired programmed and new engineers, onboarded them in bounce platform and codebase.",
+          header: "Paired programmed and helped onboard new engineers with the platform and codebase.",
           bullet: [],
         },
       ],
