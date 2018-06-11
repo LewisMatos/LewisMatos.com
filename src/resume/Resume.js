@@ -1,4 +1,4 @@
-let Resume = {
+44444444let Resume = {
   basics: {
     firstname: "Lewis",
     middleinitial: "Z.",
@@ -177,7 +177,7 @@ let Resume = {
       area: "Bachelor of Science, Computer Science",
       studyType: "Computer Science",
       startDate: "Jan 2013",
-      endDate: "Present",
+      endDate: "July 2016",
       gpa: "0",
       courses: ["DB1101 - Basic SQL"],
     },
