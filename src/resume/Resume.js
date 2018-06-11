@@ -1,4 +1,4 @@
-export default Resume = {
+let Resume = {
   basics: {
     firstname: "Lewis",
     middleinitial: "Z.",
@@ -234,4 +234,4 @@ export default Resume = {
     },
   ],
 };
-
+export default Resume;
