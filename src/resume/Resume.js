@@ -177,7 +177,7 @@ let Resume = {
       area: "Bachelor of Science, Computer Science",
       studyType: "Computer Science",
       startDate: "Jan 2013",
-      endDate: "July 2016",
+      endDate: "Dec 2018",
       gpa: "0",
       courses: ["DB1101 - Basic SQL"],
     },
