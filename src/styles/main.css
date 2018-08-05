@@ -38,7 +38,7 @@ h6 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("https://s3.amazonaws.com/lewismatos.com/images/_71A6572.jpg");
+  background-image: url('https://s3.amazonaws.com/lewismatos.com/images/_71A6572.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -48,7 +48,7 @@ h6 {
   bottom: 0;
 }
 .profile-picture::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -176,8 +176,8 @@ a:hover {
 
 @media screen and (min-width: 120rem) {
   html {
-    font-size: calc(0.875rem + 0.25 * (100vw - 80rem) / 40); /* 1 */
-    font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40); /* 2 */
-    font-size: -ms-calc(0.875rem + 0.25 * (100vw - 80em) / 40); /* 3 */
+    font-size: calc(0.775rem + 0.25 * (100vw - 80rem) / 40); /* 1 */
+    font-size: -webkit-calc(77.5% + 0.25 * (100vw - 8000%) / 40); /* 2 */
+    font-size: -ms-calc(0.775rem + 0.25 * (100vw - 80em) / 40); /* 3 */
   }
 }
