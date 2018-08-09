@@ -2,8 +2,9 @@
 
 ### Technologies
 
-### AWS
+## Backend
 
+* AWS
 * Serverless
 * CodeBuild
 * Lambda
@@ -12,8 +13,7 @@
 * CloudFront
 * Route53
 
-### React
+## Frontend
 
-* Bootstrap
-* Webpack
-* Babel
+* React
+
